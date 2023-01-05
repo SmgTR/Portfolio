@@ -1,3 +1,5 @@
+import MainPage from '@/src/layout/MainPage';
+
 export default function Home() {
-  return <h4>OMG</h4>;
+  return <MainPage />;
 }
