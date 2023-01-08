@@ -44,8 +44,8 @@ const Cursor: FC = () => {
     });
 
     function updateCursorPosition(event: MouseEvent) {
-      mouse.x = event.pageX;
-      mouse.y = event.pageY;
+      mouse.x = event.clientX;
+      mouse.y = event.clientY;
     }
 
     function updateCursor() {
@@ -73,7 +73,7 @@ const Cursor: FC = () => {
       const targetBox = event.currentTarget.getBoundingClientRect();
       gsap.to(cursorOuter, {
         x: targetBox.left,
-        y: targetBox.top + scrollHeight,
+        y: targetBox.top,
         width: targetBox.width,
         height: targetBox.height,
         borderRadius: circle ? '50%' : '5px',

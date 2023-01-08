@@ -45,7 +45,7 @@ echo '🤔🤔🤔🤔... Alright... Code looks good to me... Trying to build no
 yarn build ||
 (
     echo '❌👷🔨❌ Your build failed ❌👷🔨❌
-            Express build failed: View the errors above to see why. 
+            Next build failed: View the errors above to see why. 
     '
     false;
 )
