@@ -1,15 +1,26 @@
 import styled from 'styled-components';
+import { device } from '../Responsive';
 
 export const HeroWrapper = styled.section`
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: center;
+  margin-top: 2rem;
   padding: 0 5%;
+  margin-bottom: 4rem;
+
+  ${device.tabletDesktop} {
+    justify-content: center;
+    margin: 0;
+    min-height: 90vh;
+  }
 
   & h3 {
-    font-size: 8.4rem;
+    font-size: 6.2rem;
+    ${device.desktop} {
+      font-size: 8.4rem;
+      margin-top: 0;
+    }
 
     & span {
       opacity: 0;
@@ -19,26 +30,19 @@ export const HeroWrapper = styled.section`
       position: relative;
       margin-left: 1.8rem;
     }
-
-    & span.underline {
-      content: '';
-      position: absolute;
-      left: 50px;
-      bottom: 16px;
-      width: 28px;
-      height: 14px;
-      transform: skew(-12deg);
-      background: rgba(260, 60, 60, 0.8);
-      z-index: -1;
-      bottom: -4px;
-    }
   }
 `;
 
 export const AboutText = styled.p`
   font-size: 2.2rem;
-  max-width: 50%;
+  width: 100%;
   margin-top: 4.2rem;
   line-height: 4.2rem;
   opacity: 0;
+  text-align: justify;
+
+  ${device.desktop} {
+    max-width: 50%;
+    text-align: left;
+  }
 `;
