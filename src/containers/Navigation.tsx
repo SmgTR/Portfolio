@@ -6,9 +6,7 @@ const Navigation: FC = ({}) => {
   return (
     <NavigationWrapper>
       <h3>Tomasz Rusnak</h3>
-      <nav>
-        <HamburgerMenu />
-      </nav>
+      <nav>{/* <HamburgerMenu /> */}</nav>
     </NavigationWrapper>
   );
 };
