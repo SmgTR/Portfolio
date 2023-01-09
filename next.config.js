@@ -4,7 +4,8 @@ const nextConfig = {
   output: 'standalone',
   compiler: {
     styledComponents: {
-      displayName: true
+      displayName: true,
+      ssr: true
     }
   }
 };
