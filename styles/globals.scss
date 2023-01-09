@@ -26,12 +26,10 @@ body {
   background: rgb(18, 18, 18);
   color: #d1cfcf;
 
-  &:not(.contact-page) {
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 
   img {
     -webkit-user-drag: none;
@@ -284,4 +282,23 @@ a:hover {
 
 .sp_description_item {
   opacity: 0.2;
+}
+
+.scrollTop {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d1cfcf;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  opacity: 0;
+
+  i {
+    font-size: 1.8rem;
+  }
 }

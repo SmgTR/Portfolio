@@ -12,7 +12,6 @@ const Cursor: FC = () => {
       y: -100
     };
 
-    // Just in case you need to scroll
     let scrollHeight = 0;
     window.addEventListener('scroll', function (e) {
       scrollHeight = window.scrollY;
