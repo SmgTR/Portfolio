@@ -7,10 +7,12 @@ import Hero from '@/src/containers/Hero';
 import Skills from '@/src/containers/Skills';
 import Projects from '@/src/containers/Projects';
 import Contact from '../containers/Contact';
+import ScrollTop from '../components/ui/ScrollTop';
 
 const MainPage: FC = ({}) => {
   return (
     <>
+      <ScrollTop />
       <Cursor />
       <Navigation />
       <Hero />

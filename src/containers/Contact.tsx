@@ -1,6 +1,4 @@
-import { FC, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { FC } from 'react';
 
 import { SectionTitle } from '@/src/styled/components/ui/SectionTitle';
 import { ContactWrapper } from '../styled/containers/ContactWrapper';
@@ -9,20 +7,7 @@ import { ContactSubTitle } from '../styled/components/contact/ContactSubTitle';
 import { ContactTitleWrapper } from '../styled/components/contact/ContactTitleWrapper';
 import { SocialLinkWrapper } from '../styled/components/contact/SocialLinkWrapper';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Contact: FC = ({}) => {
-  useEffect(() => {
-    const contactTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.first-project-page',
-        start: '0%',
-        end: '100%',
-        scrub: true
-      }
-    });
-  }, []);
-
   return (
     <ContactWrapper className="contact-page">
       <ContactTitleWrapper>
